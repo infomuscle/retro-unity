@@ -352,6 +352,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &66440238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66440232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a558a9e6e5e01c842a3d56a3e825e54e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 1068667975}
+  gunPivot: {fileID: 1652450466}
+  leftHandMount: {fileID: 1068667977}
+  rightHandMount: {fileID: 1068667976}
 --- !u!4 &66440239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 98cdee121d6e440de9fb99a7c24fa0da,
@@ -415,6 +431,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d744994bc414c37bfda957f1d57118, type: 3}
+--- !u!198 &269263170 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000012944515248, guid: 74d744994bc414c37bfda957f1d57118,
+    type: 3}
+  m_PrefabInstance: {fileID: 269263169}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &822530263
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +979,47 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!4 &1068667974 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4959168996130380, guid: 13259943c4d634186ac994d570bb3253,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068667969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1068667975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068667971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c14943f73d87543b453f3a037d7029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireTransform: {fileID: 1068667974}
+  muzzleFlashEffect: {fileID: 269263170}
+  shellEjectEffect: {fileID: 2048783238}
+  shotClip: {fileID: 8300000, guid: b82a66dab749415458d1f6600c997095, type: 3}
+  reloadClip: {fileID: 8300000, guid: 9eca29ee7f8209e419470fcd586aec21, type: 3}
+  damage: 25
+  ammoRemain: 100
+  magCapacity: 25
+  magAmmo: 0
+  timeBetFire: 0.12
+  reloadTime: 1.8
+--- !u!4 &1068667976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4789895822770736, guid: 13259943c4d634186ac994d570bb3253,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068667969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1068667977 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4355249862128598, guid: 13259943c4d634186ac994d570bb3253,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068667969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1652450465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,3 +1165,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e60b325a019543cbb2e3920522a2e6b, type: 3}
+--- !u!198 &2048783238 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000010131513902, guid: 8e60b325a019543cbb2e3920522a2e6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2048783237}
+  m_PrefabAsset: {fileID: 0}
